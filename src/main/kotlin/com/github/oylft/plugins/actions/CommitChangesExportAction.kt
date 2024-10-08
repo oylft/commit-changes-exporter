@@ -34,6 +34,14 @@ class CommitChangesExportAction : AnAction() {
             change.virtualFile?.let { fileList.add(it) }
         }
 
+        if (fileList.isEmpty()) {
+            Messages.showWarningDialog(
+                Bundle.message("noChangesMessage"),
+                Bundle.message("noChangesTitle")
+            )
+            return
+        }
+
         val selectedFiles = FileChooser.chooseFiles(
             FileChooserDescriptorFactory.createSingleFolderDescriptor(),
             project,
@@ -57,15 +65,6 @@ class CommitChangesExportAction : AnAction() {
 
         val projectBaseDir = LocalFileSystem.getInstance().findFileByPath(basePath) ?: return
 
-
-
-        if (fileList.isEmpty()) {
-            Messages.showWarningDialog(
-                Bundle.message("noChangesMessage"),
-                Bundle.message("noChangesTitle")
-            )
-            return
-        }
 
 
         ApplicationManager.getApplication().runWriteAction {
