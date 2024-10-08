@@ -59,6 +59,13 @@ class CommitChangesExportAction : AnAction() {
 
 
 
+        if (fileList.isEmpty()) {
+            Messages.showWarningDialog(
+                Bundle.message("noChangesMessage"),
+                Bundle.message("noChangesTitle")
+            )
+            return
+        }
 
 
         ApplicationManager.getApplication().runWriteAction {
