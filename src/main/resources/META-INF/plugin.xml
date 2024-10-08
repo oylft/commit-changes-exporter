@@ -6,13 +6,16 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <resource-bundle>messages.Bundle</resource-bundle>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="org.jetbrains.plugins.template.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
 
-    <applicationListeners>
-        <listener class="org.jetbrains.plugins.template.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+    <actions>
+        <action id="com.github.oylft.plugins.actions.CommitChangesExportAction"
+                class="com.github.oylft.plugins.actions.CommitChangesExportAction" text="Export Files"
+                description="Export files">
+            <add-to-group group-id="ChangesViewPopupMenu" anchor="first"/>
+            <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="first" />
+            <add-to-group group-id="ShelvedChangesPopupMenu" anchor="first" />
+        </action>
+    </actions>
 </idea-plugin>
