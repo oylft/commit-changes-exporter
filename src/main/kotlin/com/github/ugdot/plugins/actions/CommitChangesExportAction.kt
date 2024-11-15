@@ -1,6 +1,6 @@
-package com.github.oylft.plugins.actions
+package com.github.ugdot.plugins.actions
 
-import com.github.oylft.plugins.Bundle
+import com.github.ugdot.plugins.Bundle
 import com.intellij.openapi.ListSelection
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent

@@ -1,4 +1,4 @@
-package com.github.oylft.plugins
+package com.github.ugdot.plugins
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

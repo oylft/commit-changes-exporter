@@ -1,6 +1,6 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.oylft.plugins</id>
+    <id>com.github.ugdot.plugins</id>
     <name>Commit Changes Exporter</name>
     <vendor>oylft</vendor>
 
@@ -10,8 +10,8 @@
 
 
     <actions>
-        <action id="com.github.oylft.plugins.actions.CommitChangesExportAction"
-                class="com.github.oylft.plugins.actions.CommitChangesExportAction" text="Export Files"
+        <action id="com.github.ugdot.plugins.actions.CommitChangesExportAction"
+                class="com.github.ugdot.plugins.actions.CommitChangesExportAction" text="Export Files"
                 description="Export files">
             <add-to-group group-id="ChangesViewPopupMenu" anchor="first"/>
             <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="first" />
