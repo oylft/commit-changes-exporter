@@ -2,4 +2,4 @@
 
 ## [Unreleased]
 
-[Unreleased]: https://github.com/oylft/commit-changes-exporter/commits
+[Unreleased]: https://github.com/ugdot/commit-changes-exporter/commits
